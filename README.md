@@ -279,3 +279,16 @@ notes(1,'2020-07-21 22:05:20','2020-07-21 22:05:20','mytest','12344444','','pyth
 
 
 
+## 参考资料
+
+[1].pallets/flask: The Python micro framework for building web applications..https://github.com/pallets/flask
+
+[2].使用 WTForms 进行表单验证 &#8212; Flask 中文文档（ 1.1.1 ）. https://dormousehole.readthedocs.io/en/latest/patterns/wtforms.html
+
+[3]render_template渲染模板及jinja2 - 后端开发——Flask初体验 - SegmentFault 思否.https://segmentfault.com/a/1190000012817254
+
+[4].《Flask+Web开发实战：入门、进阶与原理解析（李辉著+）》
+
+[5].《Flask Web开发：基于Python的Web应用开发实战》
+
+[6]. Bootstrap.https://getbootstrap.com/2.3.2/
