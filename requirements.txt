@@ -1,0 +1,6 @@
+Flask_PageDown==0.3.0
+Flask_WTF==0.14.3
+Flask==1.0.2
+Markdown==3.2.2
+WTForms==2.3.1
+Flask_RESTful==0.3.8

@@ -1,0 +1,48 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <div class="container"  style="padding-top: 2%">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="alert alert-info fade in">
+                <a href="#" class="close" data-dismiss="alert">&times;</a>
+                <strong>提醒</strong> 你可以通过点击标签来过滤所有带有标签的笔记
+            </div>
+            <br>
+            {% if username %}
+                {% if delete %}
+                    <div class="alert alert-danger">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        成功删除标签
+                    </div>
+                {% endif %}
+                <!-- <h1>Welcome, {{ username }}</h1> -->
+                {% if tags %}
+                    <table class="table table-hover table-striped table-bordered" style="background-color: white;">
+                        <thead class="text-center">
+                            <tr>
+                                <th class="text-center">#</th>
+                                <th>Tag</th>
+                                <th class="text-center">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for tag in tags %}
+                                <tr>
+                                    <td class="text-center">{{ loop.index }}</td>
+                                    <td><a href="/tags/view/{{ tag[0] }}">{{ tag[1] }}</a></td>
+                                    <td class="text-center">
+                                        <a href="/tags/delete/{{ tag[0] }}/"><span class="glyphicon glyphicon-trash"></span></a>
+                                    </td>
+                                </tr>
+                            {%  endfor %}
+                        </tbody>
+                    </table>
+                {% else %}
+                    <div class="alert alert-danger">
+                        还没有标签，您可以创建一个标签 <a href="/tags/add/">here</a>
+                    </div>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
