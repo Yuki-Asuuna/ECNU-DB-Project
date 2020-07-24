@@ -17,7 +17,33 @@
 
 ## Github项目地址
 
-​	https://github.com/Yuki-Asuuna/ECNU-DB-Project
+https://github.com/Yuki-Asuuna/ECNU-DB-Project
+
+
+
+## 部署地址（阿里云服务器）
+
+```
+http://121.199.43.57:5000/
+```
+
+
+
+## DOCKER镜像
+
+在服务器上跑的时候，要把manage.py中的app.run()中的host设置为"0.0.0.0"
+
+公网地址：
+
+```
+registry.cn-hangzhou.aliyuncs.com/ecnuproject/ecnu-db
+```
+
+拉取镜像：
+
+```bash
+sudo docker pull registry.cn-hangzhou.aliyuncs.com/ecnuproject/ecnu-db:0.1
+```
 
 
 
